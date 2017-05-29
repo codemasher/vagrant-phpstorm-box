@@ -140,13 +140,13 @@ service mysql restart
 wget https://files.phpmyadmin.net/phpMyAdmin/4.7.1/phpMyAdmin-4.7.1-all-languages.tar.gz
 tar -xzvf phpMyAdmin-4.7.1-all-languages.tar.gz -C /usr/share/
 mv /usr/share/phpMyAdmin-4.7.1-all-languages /usr/share/phpmyadmin
-cd /usr/share/phpmyadmin/ && composer install --no-dev --no-interaction --prefer-source
+cd /usr/share/phpmyadmin/ && composer install --no-dev --no-interaction --prefer-dist
 cd /home/vagrant && rm phpMyAdmin-4.7.1-all-languages.tar.gz
 
 CONFIG_PHPMYADMIN="<?php
 
 \$cfg['blowfish_secret'] = 'YOU MUST FILL IN THIS FOR COOKIE';
-\$cfg['DefaultLang'] = 'de';
+\$cfg['DefaultLang'] = 'en';
 \$cfg['ShowAll'] = true;
 \$cfg['MaxRows'] = 100;
 \$cfg['UploadDir'] = '';
