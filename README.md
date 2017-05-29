@@ -28,9 +28,10 @@ A testing environment for PHPStorm projects (based on [laravel/homestead](https:
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ## Installation (user/password: vagrant)
-- extract the [repo files](https://github.com/codemasher/php-cache/archive/master.zip) to your project's root and open it in PHPStorm
+- extract the [repo files](https://github.com/codemasher/php-cache/archive/master.zip) to your project's root and open the project in PHPStorm
 - change the `VIRTUALBOX_DISPLAY_NAME` in `Vagrantfile`
 - run the box (Tools > Vagrant > Up)
+- :coffee: :tea: :beer:
 - [set up the PHP remote interpreter](https://raw.githubusercontent.com/codemasher/vagrant-phpstorm-box/master/storage/settings-interpreter.png) (Settings > Languages & Frameworks > PHP)
 - [configure PHPUnit](https://raw.githubusercontent.com/codemasher/vagrant-phpstorm-box/master/storage/settings-tests.png) (Settings > Languages & Frameworks > PHP > Test Frameworks)
 - [configure the remote host](https://raw.githubusercontent.com/codemasher/vagrant-phpstorm-box/master/storage/settings-deployment.png)
