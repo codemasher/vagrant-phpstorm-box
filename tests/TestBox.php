@@ -58,7 +58,7 @@ class TestBox extends TestCase{
 	}
 
 	public function testSQLite(){
-		$db = new \PDO('sqlite:/vagrant/storage/dbtest.sqlite', 'SYSDBA', 'masterkey');
+		$db = new \PDO('sqlite:/vagrant/storage/dbtest.sqlite');
 
 		$this->assertTrue(strpos($db->getAttribute(\PDO::ATTR_CLIENT_VERSION),'3.') !== false);
 
